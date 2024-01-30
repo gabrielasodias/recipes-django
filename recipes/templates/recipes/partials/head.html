@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 
-    <title>Recipes</title>
+    <title>Receitas</title>
 
     <style>
         :root {
@@ -100,17 +100,51 @@
             margin: 0 auto;
         }
 
-        .main-logo-icon-food {
-            margin-right: 16px;
-        }
-
-        .main-logo-icon-heart {
-            margin-left: 13px;
-        }
-
         .main-logo-text {
             font-family: "Dancing Script", cursive;
             font-weight: 700;
+        }
+
+        .search-form {
+            border: 2px solid var(--color-gray-2);
+            max-width: 640px;
+            margin: 0 auto;
+            border-radius: 4px;
+            position: relative;
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-input,
+        .search-button {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 10px;
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-input {
+            width: 100%;
+            padding-right: 30px;
+        }
+
+        .search-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .search-button:focus {
+            outline: 1px solid var(--color-primary);
+            background: rgba(0, 0, 0, .05)
+        }
+
+        .search-form:focus-within {
+            border-color: var(--color-primary);
+        }
+
+        .search-form:focus-within .search-button {
+            color: var(--color-primary);
         }
     </style>
 </head>
